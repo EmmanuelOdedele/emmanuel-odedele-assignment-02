@@ -21,8 +21,7 @@ function sumOfNumbers(arrayOfNumbers) {
     }
     return sum;
 }
-
-console.log(sumOfNumbers([2, 3, 4, 5, 6]))
+assignment.sumOfNumbers = sumOfNumbers
 
 
 /**
@@ -35,13 +34,17 @@ console.log(sumOfNumbers([2, 3, 4, 5, 6]))
  * @returns number the count of even numbers
  */
 
-const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+function countEvenNumbers(arrayOfNumbers) {
+    let even = 0;
 
-const countEvenNumbers = arr.filter(number => {
-    return number % 2 == 0;
-});
-
-console.log(countEvenNumbers.length)
+    arrayOfNumbers.forEach(number => {
+        if (number % 2 == 0) {
+            even++;
+        }
+    });
+    return even;
+}
+assignment.countEvenNumbers = countEvenNumbers;
 
 /**
  * Challenge - 3
