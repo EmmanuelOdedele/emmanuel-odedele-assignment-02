@@ -41,7 +41,7 @@ const countEvenNumbers = arr.filter(number => {
     return number % 2 == 0;
 });
 
-console.log(countEvenNumbers)
+console.log(countEvenNumbers.length)
 
 /**
  * Challenge - 3
